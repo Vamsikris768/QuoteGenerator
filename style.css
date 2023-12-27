@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,200;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Courier Prime', monospace;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+body{
+    background:#bbc6fa;
+}
+.card{
+    width: 90%;
+    max-width: 700px;
+
+    /* width: 700px; */
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0,0,0,0.15) ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    border-radius: 10px;
+}
+.card h2{
+    margin-bottom: 40px;
+    font-size: 32px;
+    position: relative;
+}
+.card h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background:rgba(23,124,229);
+    position: absolute;
+    bottom: -10px;
+    left:50%;
+    transform: translateX(-50%);
+}
+blockquote{
+    font-size: 26px;
+    min-height: 110px;
+
+}
+blockquote::before, blockquote::after{
+    content:'"'
+
+}
+span{
+    display: block;
+    float: right;
+    margin-top: 10px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 900;
+    color: green;
+}
+span::before{
+    content:'';    
+    width:20px;
+    height: 2px;
+    background:rgb(23,124,229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+
+}
+.btn{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-twitter{
+    color: rgb(23, 124, 229);
+    display: flex;
+    margin-right: 6px;
+}
+button{
+    background:rgb(23,124,229);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgb(23,124,229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+button:nth-child(2){
+    background: transparent;
+    color: #333;
+}
